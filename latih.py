@@ -2,6 +2,7 @@ import numpy as np
 from PIL import Image
 from HaarLikeFeature import HaarLikeFeature, FeatureTypes
 import os
+import Cascade as cas
 
 def load_images(path):
     images = []
@@ -62,3 +63,5 @@ img_height, img_width = faces_ii_data[0].shape
 
 #create features
 features = create_features(img_height=19,img_width=19)
+#cascade => stage of bunch classifiers, alpha => weights every classifier
+cascade, alpha = cas.cascade_latih(faces_ii_data,non_faces_ii_data,features)
