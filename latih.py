@@ -50,6 +50,9 @@ def create_features(img_height, img_width, min_feature_width = 1, max_feature_wi
 positif_data_training = 'trainset/faces'
 negatif_data_training = 'trainset/non-faces'
 
+#define level cascade on list
+level_cascade = [2,10,20,20,50]
+
 #load data training
 print('Load data training positif...')
 faces_data = load_images(positif_data_training)
@@ -64,4 +67,4 @@ img_height, img_width = faces_ii_data[0].shape
 #create features
 features = create_features(img_height=19,img_width=19)
 #cascade => stage of bunch classifiers, alpha => weights every classifier
-cascade, alpha = cas.cascade_latih(faces_ii_data,non_faces_ii_data,features)
+cascade, alpha = cas.cascade_latih(faces_ii_data,non_faces_ii_data,features, level_cascade)
