@@ -2,7 +2,9 @@ import numpy as np
 from tqdm import tqdm
 import multiprocessing
 
-def calc_error()
+def calc_error():
+    pass
+
 def learn(faces_ii_data, non_faces_ii_data, features, jumlah_classifier):
 
     jumlah_positif = len(faces_ii_data)
