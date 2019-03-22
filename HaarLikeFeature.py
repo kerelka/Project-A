@@ -38,10 +38,10 @@ __________
 
 class HaarLikeFeature(object):
 
-    def __init__(self, type, posisi, height, width, threshold, polarity):
+    def __init__(self, type, posisi, width, height, threshold, polarity):
         self.type = type
         self.top_left = posisi
-        self.bottom_right = (posisi[0]+height,posisi[1]+width)
+        self.bottom_right = (posisi[0]+width,posisi[1]+height)
         self.width = width
         self.height = height
         self.threshold = threshold

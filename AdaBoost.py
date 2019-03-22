@@ -1,6 +1,8 @@
 import numpy as np
 from tqdm import tqdm
+import multiprocessing
 
+def calc_error()
 def learn(faces_ii_data, non_faces_ii_data, features, jumlah_classifier):
 
     jumlah_positif = len(faces_ii_data)
@@ -19,7 +21,6 @@ def learn(faces_ii_data, non_faces_ii_data, features, jumlah_classifier):
 
     classifiers = []
     alpha = []
-
     for _ in range(jumlah_classifier):
 
         #inisial error

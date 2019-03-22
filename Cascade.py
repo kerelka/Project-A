@@ -16,6 +16,15 @@ def cascade_latih(faces_ii_data,non_faces_ii_data,features,level_cascade):
         cascade.append(classifiers)
         alphas.append(alpha)
         count = 0
+
+        idx_img_reject = [idx for idx, img in enumerate(images) if
+                          ab.ensemble_vote(img, classifiers, alpha) != labels[idx]]
+        for idx in range(len(idx_img_reject) - 1, -1, -1):
+            if idx_img_reject[idx] < len(faces_ii_data):
+                del faces_ii_data[idx_img_reject[idx]]
+            elif idx_img_reject[idx] >= len(faces_ii_data):
+                del non_faces_ii_data[idx_img_reject[idx] - len(faces_ii_data)]
+
         for img in enumerate(faces_ii_data):
             if ab.ensemble_vote(img,classifiers,alpha) == 1:
                 count += 1
