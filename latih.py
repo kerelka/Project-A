@@ -51,7 +51,7 @@ positif_data_training = 'trainset/faces'
 negatif_data_training = 'trainset/non-faces'
 
 #define level cascade on list
-level_cascade = [2,10,20,20,50]
+level_cascade = [1,1]
 
 #load data training
 print('Load data training positif...')
