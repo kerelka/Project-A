@@ -67,3 +67,7 @@ def learn(faces_ii_data, non_faces_ii_data, features, jumlah_classifier):
 
 def vote(feature, image):
     return feature.get_vote(image)
+
+def ensemble_vote(int_img, classifiers, alpha):
+
+    return 1 if sum([alpha[i] * c.get_vote(int_img) for i,c in enumerate(classifiers)]) >= 0.5 * sum(alpha) else 0
