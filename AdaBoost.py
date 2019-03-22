@@ -1,5 +1,5 @@
 import numpy as np
-
+from tqdm import tqdm
 
 def learn(faces_ii_data, non_faces_ii_data, features, jumlah_classifier):
 
@@ -29,7 +29,7 @@ def learn(faces_ii_data, non_faces_ii_data, features, jumlah_classifier):
         bobot = bobot / np.sum(bobot)
 
         #cari error setiap feature
-        for idx, feature in enumerate(features):
+        for idx, feature in enumerate(tqdm(features,total=len(features))):
             error = sum(map(lambda img_idx: bobot[img_idx] if labels[img_idx] != vote(feature, images[img_idx]) else 0, range(jumlah_image)))
             classification_errors[idx] = error
 
