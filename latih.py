@@ -27,7 +27,7 @@ print(str(len(non_faces_ii_data))+' Has been Loaded.')
 img_height, img_width = faces_ii_data[0].shape
 
 #create features
-features = ab.create_features(19,19,min_feature_height=8,max_feature_height=10,min_feature_width=8,max_feature_width=10)
+features = ab.create_features(19,19,min_feature_height=4,max_feature_height=12,min_feature_width=4,max_feature_width=12)
 
 #cascade => stage of bunch classifiers, alpha => weights every classifier
 cascade = cas.cascade_latih(faces_ii_data,non_faces_ii_data,features, level_cascade)
