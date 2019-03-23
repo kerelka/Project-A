@@ -2,6 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="d3e0b018-c69e-442f-b841-b92837a019f8" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/Utils.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/AdaBoost.py" beforeDir="false" afterPath="$PROJECT_DIR$/AdaBoost.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Cascade.py" beforeDir="false" afterPath="$PROJECT_DIR$/Cascade.py" afterDir="false" />
@@ -19,94 +20,66 @@
     <session id="1375933213">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
-          <entry key="project.closed" value="2" />
+          <entry key="project.closed" value="3" />
+          <entry key="project.open.time.14" value="1" />
           <entry key="project.open.time.23" value="1" />
+          <entry key="project.open.time.27" value="1" />
+          <entry key="project.open.time.29" value="1" />
           <entry key="project.open.time.39" value="1" />
           <entry key="project.open.time.59" value="1" />
           <entry key="project.open.time.9" value="1" />
-          <entry key="project.opened" value="4" />
+          <entry key="project.opened" value="7" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
         <counts>
-          <entry key="png" value="1" />
-          <entry key="py" value="6" />
+          <entry key="png" value="15" />
+          <entry key="py" value="9" />
+          <entry key="txt" value="2" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
-          <entry key="Image" value="1" />
-          <entry key="Python" value="6" />
+          <entry key="Image" value="15" />
+          <entry key="PLAIN_TEXT" value="2" />
+          <entry key="Python" value="9" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="py" value="7471" />
+          <entry key="py" value="11463" />
           <entry key="txt" value="21" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
           <entry key="PLAIN_TEXT" value="21" />
-          <entry key="Python" value="7471" />
+          <entry key="Python" value="11463" />
         </counts>
       </usages-collector>
     </session>
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/latih.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1139">
-              <caret line="67" column="94" selection-start-line="67" selection-start-column="94" selection-end-line="67" selection-end-column="94" />
+            <state relative-caret-position="-350">
+              <caret line="15" column="20" selection-start-line="15" selection-start-column="20" selection-end-line="15" selection-end-column="20" />
               <folding>
-                <element signature="e#0#18#0" expanded="true" />
-                <marker date="1553246881568" expanded="true" signature="879:1928" ph="..." />
-                <marker date="1553246881568" expanded="true" signature="879:1930" ph="..." />
+                <element signature="e#1#22#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Cascade.py">
+        <entry file="file://$PROJECT_DIR$/Utils.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="408">
-              <caret line="27" column="7" lean-forward="true" selection-start-line="27" selection-start-column="7" selection-end-line="27" selection-end-column="7" />
+            <state relative-caret-position="170">
+              <caret line="10" column="17" lean-forward="true" selection-start-line="10" selection-start-column="17" selection-end-line="10" selection-end-column="17" />
               <folding>
-                <element signature="e#0#18#0" expanded="true" />
-                <marker date="1553244192256" expanded="true" signature="116:121" ph="..." />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/AdaBoost.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-493">
-              <caret line="4" column="15" selection-start-line="4" selection-start-column="15" selection-end-line="4" selection-end-column="15" />
-              <folding>
-                <element signature="e#0#18#0" expanded="true" />
-                <marker date="1553249747259" expanded="true" signature="156:157" ph="..." />
-                <marker date="1553249747259" expanded="true" signature="2317:2322" ph="..." />
-                <marker date="1553249747259" expanded="true" signature="2401:2402" ph="..." />
-                <marker date="1553249747259" expanded="true" signature="2401:2407" ph="..." />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/HaarLikeFeature.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-634">
-              <caret line="43" column="61" selection-start-line="43" selection-start-column="61" selection-end-line="43" selection-end-column="61" />
-              <folding>
-                <marker date="1553249030446" expanded="true" signature="46:81" ph="..." />
-                <marker date="1553249030446" expanded="true" signature="834:835" ph="..." />
-                <marker date="1553249030446" expanded="true" signature="834:840" ph="..." />
+                <element signature="e#0#9#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -115,8 +88,57 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/IntegralImage.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="306">
-              <caret line="18" column="46" lean-forward="true" selection-start-line="18" selection-start-column="46" selection-end-line="18" selection-end-column="46" />
+            <state relative-caret-position="204">
+              <caret line="12" selection-start-line="12" selection-end-line="12" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/Cascade.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="253">
+              <caret line="33" column="31" lean-forward="true" selection-start-line="33" selection-start-column="31" selection-end-line="33" selection-end-column="31" />
+              <folding>
+                <element signature="e#0#18#0" expanded="true" />
+                <marker date="1553353377640" expanded="true" signature="160:163" ph="..." />
+                <marker date="1553353377640" expanded="true" signature="237:242" ph="..." />
+                <marker date="1553353377640" expanded="true" signature="1576:1577" ph="..." />
+                <marker date="1553353377640" expanded="true" signature="1576:1581" ph="..." />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/AdaBoost.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-187">
+              <caret line="4" column="57" selection-start-line="4" selection-start-column="57" selection-end-line="4" selection-end-column="57" />
+              <folding>
+                <element signature="e#0#18#0" expanded="true" />
+                <marker date="1553352835191" expanded="true" signature="151:1343" ph="..." />
+                <marker date="1553352835191" expanded="true" signature="1453:1454" ph="..." />
+                <marker date="1553352835191" expanded="true" signature="3805:3810" ph="..." />
+                <marker date="1553352835191" expanded="true" signature="3883:3884" ph="..." />
+                <marker date="1553352835191" expanded="true" signature="3883:3889" ph="..." />
+                <marker date="1553352835191" expanded="true" signature="4061:4062" ph="..." />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/HaarLikeFeature.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="680">
+              <caret line="40" column="69" selection-start-line="40" selection-start-column="69" selection-end-line="40" selection-end-column="69" />
+              <folding>
+                <marker date="1553336170319" expanded="true" signature="46:81" ph="..." />
+                <marker date="1553336170319" expanded="true" signature="834:835" ph="..." />
+                <marker date="1553336170319" expanded="true" signature="834:840" ph="..." />
+                <marker date="1553336170319" expanded="true" signature="1524:1557" ph="..." />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -136,15 +158,16 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/Cascade.py" />
-        <option value="$PROJECT_DIR$/latih.py" />
-        <option value="$PROJECT_DIR$/HaarLikeFeature.py" />
         <option value="$PROJECT_DIR$/IntegralImage.py" />
+        <option value="$PROJECT_DIR$/HaarLikeFeature.py" />
+        <option value="$PROJECT_DIR$/Utils.py" />
+        <option value="$PROJECT_DIR$/latih.py" />
         <option value="$PROJECT_DIR$/AdaBoost.py" />
+        <option value="$PROJECT_DIR$/Cascade.py" />
       </list>
     </option>
   </component>
-  <component name="ProjectFrameBounds" extendedState="6">
+  <component name="ProjectFrameBounds" extendedState="7">
     <option name="y" value="23" />
     <option name="width" value="1386" />
     <option name="height" value="788" />
@@ -155,7 +178,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -167,6 +189,7 @@
           <select />
         </subPane>
       </pane>
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -236,25 +259,45 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="784" extended-state="6" />
+    <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.49632353" visible="true" weight="0.25" />
+      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.49632353" visible="true" weight="0.15625" />
       <window_info id="Structure" order="1" sideWeight="0.5036765" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
-      <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.3846154" />
+      <window_info anchor="bottom" id="Find" order="1" weight="0.3276923" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.36615384" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
-      <window_info anchor="bottom" id="TODO" order="6" weight="0.32923076" />
+      <window_info anchor="bottom" id="TODO" order="6" weight="0.3276923" />
       <window_info anchor="bottom" id="Version Control" order="7" weight="0.32615384" />
-      <window_info active="true" anchor="bottom" id="Terminal" order="8" visible="true" weight="0.3523077" />
+      <window_info anchor="bottom" id="Terminal" order="8" weight="0.3523077" />
       <window_info anchor="bottom" id="Event Log" order="9" side_tool="true" />
       <window_info anchor="bottom" id="Python Console" order="10" weight="0.3276923" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
     </layout>
+    <layout-to-restore>
+      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.49632353" visible="true" weight="0.15625" />
+      <window_info id="Structure" order="1" sideWeight="0.5036765" side_tool="true" weight="0.25" />
+      <window_info id="Favorites" order="2" side_tool="true" />
+      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Find" order="1" weight="0.3276923" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.36769232" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="bottom" id="TODO" order="6" weight="0.3276923" />
+      <window_info anchor="bottom" id="Version Control" order="7" weight="0.32615384" />
+      <window_info anchor="bottom" id="Terminal" order="8" weight="0.3523077" />
+      <window_info anchor="bottom" id="Event Log" order="9" side_tool="true" />
+      <window_info anchor="bottom" id="Python Console" order="10" weight="0.3276923" />
+      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+    </layout-to-restore>
   </component>
   <component name="Vcs.Log.Tabs.Properties">
     <option name="TAB_STATES">
@@ -293,58 +336,95 @@
     <entry file="file://$PROJECT_DIR$/testset/faces/cmu_0000.png">
       <provider selected="true" editor-type-id="images" />
     </entry>
+    <entry file="file://$PROJECT_DIR$/trainset/faces/face00001.png">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/trainset/faces/face00017.png">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/trainset/faces/face00008.png">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/trainset/faces/face00013.png">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/trainset/faces/face00010.png">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/trainset/faces/face00004.png">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/trainset/faces/face00002.png">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/gambar.png" />
+    <entry file="file://$PROJECT_DIR$/votes.txt" />
     <entry file="file://$PROJECT_DIR$/HaarLikeFeature.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-634">
-          <caret line="43" column="61" selection-start-line="43" selection-start-column="61" selection-end-line="43" selection-end-column="61" />
+        <state relative-caret-position="680">
+          <caret line="40" column="69" selection-start-line="40" selection-start-column="69" selection-end-line="40" selection-end-column="69" />
           <folding>
-            <marker date="1553249030446" expanded="true" signature="46:81" ph="..." />
-            <marker date="1553249030446" expanded="true" signature="834:835" ph="..." />
-            <marker date="1553249030446" expanded="true" signature="834:840" ph="..." />
+            <marker date="1553336170319" expanded="true" signature="46:81" ph="..." />
+            <marker date="1553336170319" expanded="true" signature="834:835" ph="..." />
+            <marker date="1553336170319" expanded="true" signature="834:840" ph="..." />
+            <marker date="1553336170319" expanded="true" signature="1524:1557" ph="..." />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/IntegralImage.py">
+    <entry file="file://$PROJECT_DIR$/Utils.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="306">
-          <caret line="18" column="46" lean-forward="true" selection-start-line="18" selection-start-column="46" selection-end-line="18" selection-end-column="46" />
+        <state relative-caret-position="170">
+          <caret line="10" column="17" lean-forward="true" selection-start-line="10" selection-start-column="17" selection-end-line="10" selection-end-column="17" />
+          <folding>
+            <element signature="e#0#9#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/AdaBoost.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-493">
-          <caret line="4" column="15" selection-start-line="4" selection-start-column="15" selection-end-line="4" selection-end-column="15" />
+        <state relative-caret-position="-187">
+          <caret line="4" column="57" selection-start-line="4" selection-start-column="57" selection-end-line="4" selection-end-column="57" />
           <folding>
             <element signature="e#0#18#0" expanded="true" />
-            <marker date="1553249747259" expanded="true" signature="156:157" ph="..." />
-            <marker date="1553249747259" expanded="true" signature="2317:2322" ph="..." />
-            <marker date="1553249747259" expanded="true" signature="2401:2402" ph="..." />
-            <marker date="1553249747259" expanded="true" signature="2401:2407" ph="..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Cascade.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="408">
-          <caret line="27" column="7" lean-forward="true" selection-start-line="27" selection-start-column="7" selection-end-line="27" selection-end-column="7" />
-          <folding>
-            <element signature="e#0#18#0" expanded="true" />
-            <marker date="1553244192256" expanded="true" signature="116:121" ph="..." />
+            <marker date="1553352835191" expanded="true" signature="151:1343" ph="..." />
+            <marker date="1553352835191" expanded="true" signature="1453:1454" ph="..." />
+            <marker date="1553352835191" expanded="true" signature="3805:3810" ph="..." />
+            <marker date="1553352835191" expanded="true" signature="3883:3884" ph="..." />
+            <marker date="1553352835191" expanded="true" signature="3883:3889" ph="..." />
+            <marker date="1553352835191" expanded="true" signature="4061:4062" ph="..." />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/latih.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1139">
-          <caret line="67" column="94" selection-start-line="67" selection-start-column="94" selection-end-line="67" selection-end-column="94" />
+        <state relative-caret-position="-350">
+          <caret line="15" column="20" selection-start-line="15" selection-start-column="20" selection-end-line="15" selection-end-column="20" />
+          <folding>
+            <element signature="e#1#22#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/IntegralImage.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="204">
+          <caret line="12" selection-start-line="12" selection-end-line="12" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Cascade.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="253">
+          <caret line="33" column="31" lean-forward="true" selection-start-line="33" selection-start-column="31" selection-end-line="33" selection-end-column="31" />
           <folding>
             <element signature="e#0#18#0" expanded="true" />
-            <marker date="1553246881568" expanded="true" signature="879:1928" ph="..." />
-            <marker date="1553246881568" expanded="true" signature="879:1930" ph="..." />
+            <marker date="1553353377640" expanded="true" signature="160:163" ph="..." />
+            <marker date="1553353377640" expanded="true" signature="237:242" ph="..." />
+            <marker date="1553353377640" expanded="true" signature="1576:1577" ph="..." />
+            <marker date="1553353377640" expanded="true" signature="1576:1581" ph="..." />
           </folding>
         </state>
       </provider>

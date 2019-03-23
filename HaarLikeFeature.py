@@ -38,7 +38,7 @@ __________
 
 class HaarLikeFeature(object):
 
-    def __init__(self, type, posisi, width, height, threshold, polarity):
+    def __init__(self, type, posisi, width, height, threshold, polarity, weight=1):
         self.type = type
         self.top_left = posisi
         self.bottom_right = (posisi[0]+width,posisi[1]+height)
@@ -46,13 +46,18 @@ class HaarLikeFeature(object):
         self.height = height
         self.threshold = threshold
         self.polarity = polarity
+        self.weight = weight
 
     def __str__(self):
         return str(self.__class__) + ": " + str(self.__dict__)
 
     def get_vote(self,int_img):
         score = self.get_score(int_img)
-        return (1 if self.polarity * score < self.polarity * self.threshold else 0)
+        """ 1, jika PjFj(x) < Pj0j(x) else 0"""
+        return self.weight * (1 if self.polarity * score < self.polarity * self.threshold else 0)
+
+    def get_weight(self):
+        return self.weight
 
     def get_score(self,int_img):
         score = 0

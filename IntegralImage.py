@@ -1,5 +1,16 @@
 import numpy as np
 
+
+def to_integral_image(img_arr):
+    integral_array = np.zeros((img_arr.shape[0]+1,img_arr.shape[1]+1))
+
+    for x in range(img_arr.shape[0]):
+        for y in range(img_arr.shape[1]):
+            integral_array[x+1,y+1] = img_arr[x,y] + integral_array[x+1,y] + integral_array[x,y+1] - integral_array[x,y]
+
+    return integral_array
+
+
 def sum_region(integral_img_arr, top_left, bottom_right):
 
     """
