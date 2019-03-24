@@ -2,6 +2,14 @@ import Cascade as cas
 import AdaBoost as ab
 import IntegralImage as ii
 import Utils as ul
+import json
+
+
+def dumper(obj):
+    try:
+        return obj.toJSON()
+    except:
+        return obj.__dict__
 
 
 #path data training
@@ -32,6 +40,14 @@ features = ab.create_features(19,19,min_feature_height=4,max_feature_height=12,m
 #cascade => stage of bunch classifiers, alpha => weights every classifier
 cascade = cas.cascade_latih(faces_ii_data,non_faces_ii_data,features, level_cascade)
 
+database = []
+
+for casc in cascade:
+    for item in casc:
+        database.append(item)
+
+with open('database.json','w') as f:
+    json.dump(database,f,default=dumper,indent=4)
 
 print('Load data testing positif...')
 faces_data_testing = ul.load_images(positif_data_testing)
