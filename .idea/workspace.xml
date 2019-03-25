@@ -3,6 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="d3e0b018-c69e-442f-b841-b92837a019f8" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Utils.py" beforeDir="false" afterPath="$PROJECT_DIR$/Utils.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/latih.py" beforeDir="false" afterPath="$PROJECT_DIR$/latih.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -15,7 +16,8 @@
     <session id="1375933213">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
-          <entry key="project.closed" value="4" />
+          <entry key="project.closed" value="6" />
+          <entry key="project.open.time.10" value="1" />
           <entry key="project.open.time.14" value="1" />
           <entry key="project.open.time.23" value="1" />
           <entry key="project.open.time.27" value="1" />
@@ -24,11 +26,12 @@
           <entry key="project.open.time.39" value="1" />
           <entry key="project.open.time.59" value="1" />
           <entry key="project.open.time.9" value="1" />
-          <entry key="project.opened" value="8" />
+          <entry key="project.opened" value="9" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
         <counts>
+          <entry key="json" value="2" />
           <entry key="png" value="15" />
           <entry key="py" value="9" />
           <entry key="txt" value="2" />
@@ -37,31 +40,32 @@
       <usages-collector id="statistics.file.types.open">
         <counts>
           <entry key="Image" value="15" />
+          <entry key="JSON" value="2" />
           <entry key="PLAIN_TEXT" value="2" />
           <entry key="Python" value="9" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="py" value="11641" />
+          <entry key="py" value="12226" />
           <entry key="txt" value="21" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
           <entry key="PLAIN_TEXT" value="21" />
-          <entry key="Python" value="11641" />
+          <entry key="Python" value="12226" />
         </counts>
       </usages-collector>
     </session>
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/latih.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="271">
-              <caret line="23" column="20" selection-start-line="23" selection-start-column="20" selection-end-line="23" selection-end-column="20" />
+            <state relative-caret-position="289">
+              <caret line="56" selection-start-line="56" selection-end-line="56" />
               <folding>
                 <element signature="e#0#21#0" expanded="true" />
               </folding>
@@ -72,10 +76,11 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Utils.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="136">
-              <caret line="10" column="17" selection-start-line="10" selection-start-column="17" selection-end-line="10" selection-end-column="17" />
+            <state relative-caret-position="262">
+              <caret line="35" selection-start-line="35" selection-end-line="35" />
               <folding>
                 <element signature="e#0#9#0" expanded="true" />
+                <marker date="1553442706756" expanded="true" signature="406:407" ph="..." />
               </folding>
             </state>
           </provider>
@@ -93,7 +98,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Cascade.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="561">
+            <state relative-caret-position="527">
               <caret line="33" column="31" selection-start-line="33" selection-start-column="31" selection-end-line="33" selection-end-column="31" />
               <folding>
                 <element signature="e#0#18#0" expanded="true" />
@@ -109,7 +114,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/AdaBoost.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="68">
+            <state relative-caret-position="-34">
               <caret line="4" column="57" selection-start-line="4" selection-start-column="57" selection-end-line="4" selection-end-column="57" />
               <folding>
                 <element signature="e#0#18#0" expanded="true" />
@@ -124,10 +129,10 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/HaarLikeFeature.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="680">
+            <state relative-caret-position="119">
               <caret line="40" column="69" selection-start-line="40" selection-start-column="69" selection-end-line="40" selection-end-column="69" />
               <folding>
                 <marker date="1553336170319" expanded="true" signature="46:81" ph="..." />
@@ -156,9 +161,9 @@
       <list>
         <option value="$PROJECT_DIR$/IntegralImage.py" />
         <option value="$PROJECT_DIR$/HaarLikeFeature.py" />
-        <option value="$PROJECT_DIR$/Utils.py" />
         <option value="$PROJECT_DIR$/AdaBoost.py" />
         <option value="$PROJECT_DIR$/Cascade.py" />
+        <option value="$PROJECT_DIR$/Utils.py" />
         <option value="$PROJECT_DIR$/latih.py" />
       </list>
     </option>
@@ -174,7 +179,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -186,6 +190,7 @@
           <select />
         </subPane>
       </pane>
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -255,14 +260,13 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="784" extended-state="6" />
-    <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.49632353" visible="true" weight="0.15625" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.49632353" visible="true" weight="0.15625" />
       <window_info id="Structure" order="1" sideWeight="0.5036765" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.3276923" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.36615384" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.36615384" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -355,16 +359,6 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/gambar.png" />
     <entry file="file://$PROJECT_DIR$/votes.txt" />
-    <entry file="file://$PROJECT_DIR$/Utils.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="136">
-          <caret line="10" column="17" selection-start-line="10" selection-start-column="17" selection-end-line="10" selection-end-column="17" />
-          <folding>
-            <element signature="e#0#9#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/IntegralImage.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="204">
@@ -372,9 +366,23 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/Cascade.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="527">
+          <caret line="33" column="31" selection-start-line="33" selection-start-column="31" selection-end-line="33" selection-end-column="31" />
+          <folding>
+            <element signature="e#0#18#0" expanded="true" />
+            <marker date="1553353377640" expanded="true" signature="160:163" ph="..." />
+            <marker date="1553353377640" expanded="true" signature="237:242" ph="..." />
+            <marker date="1553353377640" expanded="true" signature="1576:1577" ph="..." />
+            <marker date="1553353377640" expanded="true" signature="1576:1581" ph="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/AdaBoost.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
+        <state relative-caret-position="-34">
           <caret line="4" column="57" selection-start-line="4" selection-start-column="57" selection-end-line="4" selection-end-column="57" />
           <folding>
             <element signature="e#0#18#0" expanded="true" />
@@ -388,39 +396,41 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/HaarLikeFeature.py">
+    <entry file="file://$PROJECT_DIR$/Utils.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="680">
-          <caret line="40" column="69" selection-start-line="40" selection-start-column="69" selection-end-line="40" selection-end-column="69" />
+        <state relative-caret-position="262">
+          <caret line="35" selection-start-line="35" selection-end-line="35" />
           <folding>
-            <marker date="1553336170319" expanded="true" signature="46:81" ph="..." />
-            <marker date="1553336170319" expanded="true" signature="834:835" ph="..." />
-            <marker date="1553336170319" expanded="true" signature="834:840" ph="..." />
-            <marker date="1553336170319" expanded="true" signature="1524:1557" ph="..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Cascade.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="561">
-          <caret line="33" column="31" selection-start-line="33" selection-start-column="31" selection-end-line="33" selection-end-column="31" />
-          <folding>
-            <element signature="e#0#18#0" expanded="true" />
-            <marker date="1553353377640" expanded="true" signature="160:163" ph="..." />
-            <marker date="1553353377640" expanded="true" signature="237:242" ph="..." />
-            <marker date="1553353377640" expanded="true" signature="1576:1577" ph="..." />
-            <marker date="1553353377640" expanded="true" signature="1576:1581" ph="..." />
+            <element signature="e#0#9#0" expanded="true" />
+            <marker date="1553442706756" expanded="true" signature="406:407" ph="..." />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/latih.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="271">
-          <caret line="23" column="20" selection-start-line="23" selection-start-column="20" selection-end-line="23" selection-end-column="20" />
+        <state relative-caret-position="289">
+          <caret line="56" selection-start-line="56" selection-end-line="56" />
           <folding>
             <element signature="e#0#21#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/database.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-724" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/HaarLikeFeature.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="119">
+          <caret line="40" column="69" selection-start-line="40" selection-start-column="69" selection-end-line="40" selection-end-column="69" />
+          <folding>
+            <marker date="1553336170319" expanded="true" signature="46:81" ph="..." />
+            <marker date="1553336170319" expanded="true" signature="834:835" ph="..." />
+            <marker date="1553336170319" expanded="true" signature="834:840" ph="..." />
+            <marker date="1553336170319" expanded="true" signature="1524:1557" ph="..." />
           </folding>
         </state>
       </provider>

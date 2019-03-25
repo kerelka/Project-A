@@ -11,7 +11,6 @@ def dumper(obj):
     except:
         return obj.__dict__
 
-
 #path data training
 positif_data_training = 'trainset/faces'
 negatif_data_training = 'trainset/non-faces'
@@ -35,7 +34,7 @@ print(str(len(non_faces_ii_data))+' Has been Loaded.')
 img_height, img_width = faces_ii_data[0].shape
 
 #create features
-features = ab.create_features(19,19,min_feature_height=4,max_feature_height=12,min_feature_width=4,max_feature_width=12)
+features = ab.create_features(19,19,min_feature_height=4,max_feature_height=10,min_feature_width=4,max_feature_width=10)
 
 #cascade => stage of bunch classifiers, alpha => weights every classifier
 cascade = cas.cascade_latih(faces_ii_data,non_faces_ii_data,features, level_cascade)
@@ -48,6 +47,13 @@ for casc in cascade:
 
 with open('database.json','w') as f:
     json.dump(database,f,default=dumper,indent=4)
+
+path = 'database.json'
+
+features = ul.load_database(path)
+
+for fitur in features:
+    print(str(fitur))
 
 print('Load data testing positif...')
 faces_data_testing = ul.load_images(positif_data_testing)
