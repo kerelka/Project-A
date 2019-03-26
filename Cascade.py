@@ -1,13 +1,7 @@
 import numpy as np
 import AdaBoost as ab
 import progressbar
-
-
-def save_votes(votes):
-    np.savetxt("votes.txt", votes, fmt='%f')
-    print("...votes saved\n")
-
-
+import Utils as ul
 
 def cascade_latih(faces_ii_data,non_faces_ii_data,features,level_cascade):
     cascade = []
@@ -19,13 +13,12 @@ def cascade_latih(faces_ii_data,non_faces_ii_data,features,level_cascade):
     correct_faces = 0
     correct_non_faces = 0
 
-    feature_index = list(range(len(features)))
     print('Mulai pelatihan attentional cascade ...')
 
     #pilih cascade
     for idx, classifier in enumerate(level_cascade):
         print('Begin Training '+str(idx)+' layer :...')
-        classifiers, feature_index, banned_index = ab.learn(faces_ii_data,non_faces_ii_data,features,classifier,votes,feature_index, banned_index)
+        classifiers, banned_index = ab.learn(faces_ii_data, non_faces_ii_data, features, classifier, votes, banned_index)
         cascade.append(classifiers)
         #test classifiers
         correct_faces = sum(ab.ensemble_vote_all(faces_ii_data, classifiers))
@@ -53,3 +46,14 @@ def calc_votes(features, images):
             votes[i,j] = ab.vote(image=images[i],feature=features[j])
 
     return votes
+
+
+def cascade_load(features):
+    level_cascade = [2,10,20,20,30]
+    cascade = []
+
+    for idx, num_classifier in enumerate(level_cascade):
+        classifier = ul.load_features(features,num_classifier,idx+1)
+        cascade.append(classifier)
+
+    return cascade

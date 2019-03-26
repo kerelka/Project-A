@@ -27,7 +27,7 @@ def create_features(img_height, img_width, min_feature_width = 1, max_feature_wi
     return features
 
 
-def learn(faces_ii_data, non_faces_ii_data, features, jumlah_classifier, votes, feature_index, banned_index):
+def learn(faces_ii_data, non_faces_ii_data, features, jumlah_classifier, votes, banned_index):
 
     jumlah_positif = len(faces_ii_data)
     jumlah_negatif = len(non_faces_ii_data)
@@ -35,6 +35,8 @@ def learn(faces_ii_data, non_faces_ii_data, features, jumlah_classifier, votes, 
 
     images = faces_ii_data + non_faces_ii_data
     labels = np.hstack((np.ones(jumlah_positif),np.zeros(jumlah_negatif)))
+
+    feature_index = list(range(len(features)))
 
     #inisialisasi bobot
     bobot_positif = (np.ones(jumlah_positif) * 1) / (2 * jumlah_positif)
@@ -91,7 +93,7 @@ def learn(faces_ii_data, non_faces_ii_data, features, jumlah_classifier, votes, 
         #buang feature pilihan dari list features
         banned_index.append(feature_pilihan_index)
 
-    return classifiers, feature_index, banned_index
+    return classifiers, banned_index
 
 
 def vote(feature, image):
@@ -100,10 +102,13 @@ def vote(feature, image):
 
 def ensemble_vote(int_img, classifiers):
 
-    return 1 if sum([c.get_vote(int_img) for c in classifiers]) >= 0.5 * sum([clas.get_weight() for clas in classifiers]) else 0
+    return 1 if sum([c.get_vote(int_img) * c.get_weight() for c in classifiers]) >= 0.5 * sum([clas.get_weight() for clas in classifiers]) else 0
 
 
 def ensemble_vote_all(int_imgs, classifiers):
 
     vote_partial = partial(ensemble_vote, classifiers=classifiers)
     return list(map(vote_partial,int_imgs))
+
+def ensemble_vote_with_scalar(int_img, classifiers, top_left, scale):
+    return 1 if sum([c.get_vote_with_scale(int_img, top_left, scale) * c.get_weight() for c in classifiers]) >= 0.5 * sum([clas.get_weight() for clas in classifiers]) else 0

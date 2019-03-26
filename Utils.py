@@ -33,3 +33,28 @@ def load_database(path):
         features.append(HaarLikeFeature((x,y),(j,k),fitur['width'],fitur['height'],fitur['threshold'],fitur['polarity'],fitur['weight']))
 
     return features
+
+
+def load_features(features,num_classifier,idx):
+    classifiers = []
+
+    for i in range(num_classifier):
+        # stage 1 cascade (2) = 0-1
+        if idx == 1:
+            classifiers.append(features[i])
+        # stage 2 cascade (10) = 2-11
+        elif idx == 2:
+            classifiers.append(features[i + 2])
+        # stage 3 cascade (20) = 12-31
+        elif idx == 3:
+            classifiers.append(features[i + 12])
+        # stage 4 cascade (20) = 32-51
+        elif idx == 4:
+            classifiers.append(features[i + 32])
+        # stage 5 cascade (30) = 52-81
+        elif idx == 5:
+            classifiers.append(features[i + 52])
+        else:
+            break
+
+    return classifiers

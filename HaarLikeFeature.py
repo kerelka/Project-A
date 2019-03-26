@@ -1,4 +1,5 @@
 import IntegralImage as ii
+import numpy as np
 
 def enum(**enums):
     return type('Enum',(),enums)
@@ -54,7 +55,11 @@ class HaarLikeFeature(object):
     def get_vote(self,int_img):
         score = self.get_score(int_img)
         """ 1, jika PjFj(x) < Pj0j(x) else 0"""
-        return self.weight * (1 if self.polarity * score < self.polarity * self.threshold else 0)
+        return 1 if self.polarity * score < self.polarity * self.threshold else 0
+
+    def get_vote_with_scale(self,int_img, sub_window_top_left, scalar):
+        score = self.get_score_with_scale(int_img,sub_window_top_left, scalar)
+        return 1 if self.polarity * score < self.polarity * self.threshold else 0
 
     def get_weight(self):
         return self.weight
@@ -104,4 +109,98 @@ class HaarLikeFeature(object):
                                    (int(self.top_left[0] + self.width / 2), int(self.top_left[1] + self.height / 2)),
                                    self.bottom_right)
             score = first - second - third + fourth
+
+        return score
+
+    def get_score_with_scale(self,int_img, sub_window_top_left, scalar):
+
+        score = 0
+
+        tl = (np.int(np.ceil(self.top_left[0] * scalar) + sub_window_top_left[0]),
+              np.int(np.ceil(self.top_left[1] * scalar) + sub_window_top_left[1]))
+        br = (np.int(np.ceil(self.bottom_right[0] * scalar) + sub_window_top_left[0]),
+              np.int(np.ceil(self.bottom_right[1] * scalar) + sub_window_top_left[1]))
+        w = np.int(np.ceil(self.width * scalar))
+        w2 = np.int(np.ceil(self.width * scalar / 2))
+        w3 = np.int(np.ceil(self.width * scalar / 3))
+        h = np.int(np.ceil(self.height * scalar))
+        h2 = np.int(np.ceil(self.height * scalar / 2))
+        h3 = np.int(np.ceil(self.height * scalar / 3))
+
+        if self.type == FeatureType.TWO_VERTICAL:
+            '''
+                -----------
+                |         |
+                -----------
+                |#########|
+                -----------
+            '''
+
+            first = ii.sum_region(int_img, tl, (tl[0] + w, tl[1] + h2))
+            second = ii.sum_region(int_img, (tl[0], tl[1] + h2), br)
+            score = first - second
+        elif self.type == FeatureType.TWO_HORIZONTAL:
+            '''
+                  -------------
+                  |     |#####|
+                  |     |#####|
+                  |     |#####|
+                  -------------
+            '''
+            first = ii.sum_region(int_img, tl, (tl[0] + w2, tl[1] + h))
+            second = ii.sum_region(int_img, (tl[0] + w2, tl[1]), br)
+            score = first-second
+        elif self.type == FeatureType.THREE_HORIZONTAL:
+            '''
+                  -------------------
+                  |     |#####|     |
+                  |     |#####|     |
+                  |     |#####|     |
+                  -------------------
+            '''
+            first = ii.sum_region(int_img, tl, (tl[0] + w3, tl[1] + h))
+            second = ii.sum_region(int_img, (tl[0] + w3, tl[1]), (tl[0] + 2 * w3, tl[1] + h))
+            third = ii.sum_region(int_img, (tl[0] + 2 * w3, tl[1]), br)
+            score = first - second + third
+        elif self.type == FeatureType.THREE_VERTICAL:
+            '''
+                -----------
+                |         |
+                -----------
+                |#########|
+                -----------
+                |         |
+                -----------
+            '''
+            first = ii.sum_region(int_img, tl, (br[0], tl[1] + h3))
+            second = ii.sum_region(int_img, (tl[0], tl[1] + h3), (br[0], tl[1] + 2 * h3))
+            third = ii.sum_region(int_img, (tl[0], tl[1] + 2 * h3), br)
+            score = first - second + third
+        elif self.type == FeatureType.FOUR:
+            '''
+                ----------------------
+                |         |##########|
+                |         |##########|
+                ----------------------
+                |#########|          |
+                |#########|          |
+                ----------------------
+            '''
+            # top left area
+            first = ii.sum_region(int_img, tl, (tl[0] + w2, tl[1] + h2))
+            # top right area
+            second = ii.sum_region(int_img, (tl[0] + w2, tl[1]), (br[0], tl[1] + h2))
+            # bottom left area
+            '''
+            print('self.bottomR : {0}'.format(self.bottom_right))
+            print('sub_window_top_left : {0}'.format(sub_window_top_left))
+            print('br : {0}'.format(br))
+            print('scalar : {0}'.format(scalar))
+            print((tl[0], tl[1] + h2), (tl[0] + w2, br[1]))
+            '''
+            third = ii.sum_region(int_img, (tl[0], tl[1] + h2), (tl[0] + w2, br[1]))
+            # bottom right area
+            fourth = ii.sum_region(int_img, (tl[0] + w2, tl[1] + h2), br)
+            score = first - second - third + fourth
+
         return score
