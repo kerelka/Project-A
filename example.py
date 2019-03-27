@@ -8,7 +8,7 @@ from Segmentasi import Segmentasi
 from mergerect import mergeRects
 
 #pathGambar
-path = 'gambar.jpg'
+path = 'gambar-multi.jpg'
 
 #load feature and create cascade stage
 features = ul.load_database('database.json')
@@ -21,22 +21,22 @@ width = image.shape[1]
 print(str(height)+','+str(width))
 
 print('Segmentasi gambar...')
-gambar = Segmentasi(image, height, width)
-Seg = gambar.segmentasi_warna()
-
-#convert YCbCr to BGR
-print('convert ke gray...')
-normal = cv.cvtColor(Seg, cv.COLOR_YCrCb2BGR)
-gray = cv.cvtColor(normal, cv.COLOR_BGR2GRAY)
+# gambar = Segmentasi(image, height, width)
+# Seg = gambar.segmentasi_warna()
+#
+# #convert YCbCr to BGR
+# print('convert ke gray...')
+# normal = cv.cvtColor(Seg, cv.COLOR_YCrCb2BGR)
+gray = cv.cvtColor(image, cv.COLOR_BGR2GRAY)
 
 faces = dt.detect(gray,cascade)
 
 # faces = mergeRects(faces)
 
 for x,y,w,h in faces:
-    cv.rectangle(image,(y,x),(y+h,x+w),(255,255,0),2)
+    cv.rectangle(gray,(x,y),(x+w,y+h),(255,255,0),2)
 
-cv.imshow('gambar',image)
+cv.imshow('gambar',gray)
 cv.waitKey(0)
 
 

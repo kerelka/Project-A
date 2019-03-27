@@ -1,7 +1,16 @@
 import numpy as np
 import AdaBoost as ab
-import progressbar
 import Utils as ul
+from tqdm import tqdm
+import json
+
+
+def dumper(obj):
+    try:
+        return obj.toJSON()
+    except:
+        return obj.__dict__
+
 
 def cascade_latih(faces_ii_data,non_faces_ii_data,features,level_cascade):
     cascade = []
@@ -10,8 +19,6 @@ def cascade_latih(faces_ii_data,non_faces_ii_data,features,level_cascade):
     images = faces_ii_data + non_faces_ii_data
 
     votes = calc_votes(features, images)
-    correct_faces = 0
-    correct_non_faces = 0
 
     print('Mulai pelatihan attentional cascade ...')
 
@@ -29,6 +36,16 @@ def cascade_latih(faces_ii_data,non_faces_ii_data,features,level_cascade):
               + str(correct_non_faces) + '/' + str(len(non_faces_ii_data)) + '  ('
               + str((float(correct_non_faces) / len(non_faces_ii_data)) * 100) + '%)')
 
+        database_stage = []
+        for clas in classifiers:
+            database_stage.append(clas)
+
+        with open('database_stage'+str(idx+1)+'.json', 'w') as f:
+            json.dump(database_stage, f, default=dumper, indent=4)
+
+        with open('bannen_index_stage'+str(idx+1)+'.json','w') as b:
+            json.dump(banned_index, b,default=dumper, indent=4)
+
     return cascade
 
 
@@ -39,9 +56,8 @@ def calc_votes(features, images):
     print(str(jumlah_image)+', '+str(jumlah_feature))
     votes = np.zeros((jumlah_image,jumlah_feature))
 
-    bar = progressbar.ProgressBar()
     print('Mulai kalkulasi vote setiap image dengan seluruh features...')
-    for i in bar(range(jumlah_image)):
+    for i in tqdm(range(jumlah_image)):
         for j in range(jumlah_feature):
             votes[i,j] = ab.vote(image=images[i],feature=features[j])
 

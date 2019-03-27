@@ -7,7 +7,7 @@ from HaarLikeFeature import HaarLikeFeature
 def load_images(path):
     images = []
     for file in os.listdir(path):
-        if file.endswith('.jpg') or file.endswith('.png'):
+        if file.endswith('.pgm') or file.endswith('.png'):
             img_arr = np.array(Image.open(os.path.join(path, file)), dtype=np.float64)
             images.append(img_arr)
     return images

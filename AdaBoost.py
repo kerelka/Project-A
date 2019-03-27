@@ -5,7 +5,7 @@ from functools import partial
 from HaarLikeFeature import HaarLikeFeature, FeatureTypes
 
 
-def create_features(img_height, img_width, min_feature_width = 1, max_feature_width = -1, min_feature_height = 1, max_feature_height = -1):
+def create_features(img_height, img_width, min_feature_width=1, max_feature_width=-1, min_feature_height=1, max_feature_height=-1):
     features = []
     #define maximum feature
     max_feature_width = img_width if max_feature_width == -1 else max_feature_width
@@ -19,8 +19,8 @@ def create_features(img_height, img_width, min_feature_width = 1, max_feature_wi
             for feature_height in range(feature_start_height,max_feature_height,feature[1]):
                 for x in range(img_width - feature_width):
                     for y in range(img_height - feature_height):
-                        features.append(HaarLikeFeature(feature,(x,y),feature_width, feature_height, 0, 1))
-                        features.append(HaarLikeFeature(feature,(x,y), feature_width, feature_height, 0, -1))
+                        features.append(HaarLikeFeature(feature, (x, y), feature_width, feature_height, 0, 1))
+                        features.append(HaarLikeFeature(feature, (x, y), feature_width, feature_height, 0, -1))
 
     print(str(len(features))+' Has been created.')
 
