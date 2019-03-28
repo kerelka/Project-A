@@ -1,0 +1,40 @@
+[
+    {
+        "type": [
+            1,
+            2
+        ],
+        "top_left": [
+            4,
+            8
+        ],
+        "bottom_right": [
+            8,
+            14
+        ],
+        "width": 4,
+        "height": 6,
+        "threshold": 0,
+        "polarity": 1,
+        "weight": 1.2616054540450279
+    },
+    {
+        "type": [
+            2,
+            1
+        ],
+        "top_left": [
+            12,
+            4
+        ],
+        "bottom_right": [
+            16,
+            10
+        ],
+        "width": 4,
+        "height": 6,
+        "threshold": 0,
+        "polarity": -1,
+        "weight": 0.8001281081530012
+    }
+]

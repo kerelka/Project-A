@@ -35,6 +35,18 @@ def load_database(path):
     return features
 
 
+def load_banned_index(path):
+    banned_index = []
+
+    with open(path,'r') as f:
+        files = json.load(f)
+
+    for file in files:
+        banned_index.append(file)
+
+    return banned_index
+
+
 def load_features(features,num_classifier,idx):
     classifiers = []
 
