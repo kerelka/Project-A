@@ -7,7 +7,7 @@ def detect(image,cascade):
     img_height, img_width = image.shape
     int_img = ii.to_integral_image(image)
 
-    step =1.5
+    step = 5
     scale = 1.5
     height = 48
     width = 48

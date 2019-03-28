@@ -8,10 +8,11 @@ from Segmentasi import Segmentasi
 from mergerect import mergeRects
 
 #pathGambar
-path = 'gambar.jpg'
+path = 'image_0045.jpg'
 
 #load feature and create cascade stage
 features = ul.load_database('database.json')
+print(str(len(features)))
 cascade = cas.cascade_load(features)
 #imread
 image = cv.imread(path)
