@@ -69,6 +69,7 @@ def load_features(features,num_classifier,idx):
         # stage 6 cascade (30) = 82-112
         elif idx == 6:
             classifiers.append(features[i + 82])
+        else:
             break
 
     return classifiers

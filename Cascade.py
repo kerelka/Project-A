@@ -14,9 +14,9 @@ def dumper(obj):
 
 def cascade_latih(faces_ii_data,non_faces_ii_data,features,level_cascade):
     cascade = []
-    start_stage = 6
+    start_stage = 7
     banned = True
-    path_banned = 'bannen_index_stage5.json'
+    path_banned = 'bannen_index_stage6.json'
     if banned:
         features_stg = []
         banned_index = ul.load_banned_index(path_banned)
