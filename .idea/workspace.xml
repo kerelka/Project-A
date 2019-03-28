@@ -180,7 +180,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Python.exampleLive">
+  <component name="RunManager" selected="Python.latih">
     <configuration name="coret" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="Master" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -295,9 +295,9 @@
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Python.latih" />
         <item itemvalue="Python.exampleLive" />
         <item itemvalue="Python.example" />
-        <item itemvalue="Python.latih" />
         <item itemvalue="Python.testingClassifier" />
         <item itemvalue="Python.coret" />
       </list>
