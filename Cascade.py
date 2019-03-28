@@ -29,7 +29,7 @@ def cascade_latih(faces_ii_data,non_faces_ii_data,features,level_cascade):
 
     images = faces_ii_data + non_faces_ii_data
 
-    # votes = calc_votes(features, images)
+    votes = calc_votes(features, images)
 
     print('Mulai pelatihan attentional cascade ...')
     #pilih cascade
