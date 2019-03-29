@@ -22,18 +22,18 @@ width = image.shape[1]
 print(str(height)+','+str(width))
 
 print('Segmentasi gambar...')
-gambar = Segmentasi(image, height, width)
-Seg = gambar.segmentasi_warna()
-
-#convert YCbCr to BGR
-print('convert ke gray...')
-normal = cv.cvtColor(Seg, cv.COLOR_YCrCb2BGR)
-gray = cv.cvtColor(normal, cv.COLOR_BGR2GRAY)
+# gambar = Segmentasi(image, height, width)
+# Seg = gambar.segmentasi_warna()
+#
+# #convert YCbCr to BGR
+# print('convert ke gray...')
+# normal = cv.cvtColor(Seg, cv.COLOR_YCrCb2BGR)
+gray = cv.cvtColor(image, cv.COLOR_BGR2GRAY)
 
 faces = dt.detect(gray,cascade)
 
-# faces = mergeRects(faces,min_overlap_cnt=2,overlap_rate=0.3)
-faces = mergeRects(faces)
+# faces = mergeRects(faces,min_overlap_cnt=50,overlap_rate=0.3)
+# faces = mergeRects(faces)
 for x,y,w,h in faces:
     cv.rectangle(gray,(x,y),(x+w,y+h),(255,255,0),2)
 
