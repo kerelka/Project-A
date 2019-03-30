@@ -20,7 +20,7 @@ positif_data_testing = 'testset/faces'
 negatif_data_testing = 'testset/non-faces'
 
 #define level cascade on list
-level_cascade = [2,10,20,20,30,30,50,50,50]
+level_cascade = [2,10,20,20,30,30,50,50,50,50]
 
 #load data training
 print('Load data training positif...')

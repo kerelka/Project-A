@@ -14,9 +14,9 @@ def dumper(obj):
 
 def cascade_latih(faces_ii_data,non_faces_ii_data,features,level_cascade):
     cascade = []
-    start_stage = 9
+    start_stage = 10
     banned = True
-    path_banned = 'bannen_index_stage8.json'
+    path_banned = 'bannen_index_stage9.json'
     if banned:
         features_stg = []
         banned_index = ul.load_banned_index(path_banned)
@@ -41,23 +41,23 @@ def cascade_latih(faces_ii_data,non_faces_ii_data,features,level_cascade):
             classifiers = ul.load_features(features_stg,classifier,idx+1)
         cascade.append(classifiers)
         #test classifiers
-        correct_faces = sum(ab.ensemble_vote_all(faces_ii_data, classifiers))
-        correct_non_faces = len(non_faces_ii_data) - sum(ab.ensemble_vote_all(non_faces_ii_data, classifiers))
-        print('Result after ' + str(idx + 1) + ' layer(s):\n     Faces: ' + str(correct_faces) + '/' + str(
-            len(faces_ii_data))
-              + '  (' + str((float(correct_faces) / len(faces_ii_data)) * 100) + '%)\n  non-Faces: '
-              + str(correct_non_faces) + '/' + str(len(non_faces_ii_data)) + '  ('
-              + str((float(correct_non_faces) / len(non_faces_ii_data)) * 100) + '%)')
+        # correct_faces = sum(ab.ensemble_vote_all(faces_ii_data, classifiers))
+        # correct_non_faces = len(non_faces_ii_data) - sum(ab.ensemble_vote_all(non_faces_ii_data, classifiers))
+        # print('Result after ' + str(idx + 1) + ' layer(s):\n     Faces: ' + str(correct_faces) + '/' + str(
+        #     len(faces_ii_data))
+        #       + '  (' + str((float(correct_faces) / len(faces_ii_data)) * 100) + '%)\n  non-Faces: '
+        #       + str(correct_non_faces) + '/' + str(len(non_faces_ii_data)) + '  ('
+        #       + str((float(correct_non_faces) / len(non_faces_ii_data)) * 100) + '%)')
 
-        database_stage = []
-        for clas in classifiers:
-            database_stage.append(clas)
-
-        with open('database_stage'+str(idx+1)+'.json', 'w') as f:
-            json.dump(database_stage, f, default=dumper, indent=4)
-
-        with open('bannen_index_stage'+str(idx+1)+'.json','w') as b:
-            json.dump(banned_index, b,default=dumper, indent=4)
+        # database_stage = []
+        # for clas in classifiers:
+        #     database_stage.append(clas)
+        #
+        # with open('database_stage'+str(idx+1)+'.json', 'w') as f:
+        #     json.dump(database_stage, f, default=dumper, indent=4)
+        #
+        # with open('bannen_index_stage'+str(idx+1)+'.json','w') as b:
+        #     json.dump(banned_index, b,default=dumper, indent=4)
 
     return cascade
 
