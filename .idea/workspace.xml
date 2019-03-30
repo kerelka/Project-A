@@ -1,13 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="d3e0b018-c69e-442f-b841-b92837a019f8" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Cascade.py" beforeDir="false" afterPath="$PROJECT_DIR$/Cascade.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Utils.py" beforeDir="false" afterPath="$PROJECT_DIR$/Utils.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/example.py" beforeDir="false" afterPath="$PROJECT_DIR$/example.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/latih.py" beforeDir="false" afterPath="$PROJECT_DIR$/latih.py" afterDir="false" />
-    </list>
+    <list default="true" id="d3e0b018-c69e-442f-b841-b92837a019f8" name="Default Changelist" comment="" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -100,7 +94,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Cascade.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="347">
+            <state relative-caret-position="328">
               <caret line="32" lean-forward="true" selection-start-line="32" selection-end-line="32" />
               <folding>
                 <element signature="e#0#18#0" expanded="true" />
@@ -217,7 +211,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Python.exampleLive">
+  <component name="RunManager" selected="Python.latih">
     <configuration name="coret" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="Master" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -332,9 +326,9 @@
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Python.latih" />
         <item itemvalue="Python.exampleLive" />
         <item itemvalue="Python.example" />
-        <item itemvalue="Python.latih" />
         <item itemvalue="Python.testingClassifier" />
         <item itemvalue="Python.coret" />
       </list>
@@ -364,20 +358,19 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="784" extended-state="6" />
-    <editor active="true" />
     <layout>
       <window_info content_ui="combo" id="Project" order="0" sideWeight="0.49632353" visible="true" weight="0.15625" />
       <window_info id="Structure" order="1" sideWeight="0.5036765" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.3276923" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.31846154" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.3523077" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" weight="0.3276923" />
       <window_info anchor="bottom" id="Version Control" order="7" weight="0.32615384" />
-      <window_info anchor="bottom" id="Terminal" order="8" weight="0.3523077" />
+      <window_info active="true" anchor="bottom" id="Terminal" order="8" visible="true" weight="0.3523077" />
       <window_info anchor="bottom" id="Event Log" order="9" side_tool="true" />
       <window_info anchor="bottom" id="Python Console" order="10" weight="0.3276923" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
@@ -602,7 +595,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/Cascade.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="347">
+        <state relative-caret-position="328">
           <caret line="32" lean-forward="true" selection-start-line="32" selection-end-line="32" />
           <folding>
             <element signature="e#0#18#0" expanded="true" />
