@@ -20,7 +20,7 @@ positif_data_testing = 'testset/faces'
 negatif_data_testing = 'testset/non-faces'
 
 #define level cascade on list
-level_cascade = [2,10,20,20,30,30,50,50,50,50]
+level_cascade = [2,10,20,20,30,30,50,50,50,50,60]
 
 #load data training
 print('Load data training positif...')
@@ -28,7 +28,6 @@ faces_data = ul.load_images(positif_data_training)
 faces_ii_data = list(map(ii.to_integral_image,faces_data))
 print(str(len(faces_ii_data))+' Has been loaded.\nLoad data training negatif...')
 non_faces_data = ul.load_images(negatif_data_training)
-print(str(non_faces_data[0].shape[0])+','+str(non_faces_data[0].shape[1]))
 non_faces_ii_data = list(map(ii.to_integral_image,non_faces_data))
 print(str(len(non_faces_ii_data))+' Has been Loaded.')
 
