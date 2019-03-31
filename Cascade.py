@@ -14,9 +14,9 @@ def dumper(obj):
 
 def cascade_latih(faces_ii_data,non_faces_ii_data,features,level_cascade):
     cascade = []
-    start_stage = 11
+    start_stage = 12
     banned = True
-    path_banned = 'bannen_index_stage10.json'
+    path_banned = 'bannen_index_stage11.json'
     if banned:
         features_stg = []
         banned_index = ul.load_banned_index(path_banned)
@@ -34,8 +34,8 @@ def cascade_latih(faces_ii_data,non_faces_ii_data,features,level_cascade):
     print('Mulai pelatihan attentional cascade ...')
     #pilih cascade
     for idx, classifier in enumerate(level_cascade):
-        print('Begin Training '+str(idx+1)+' layer :...')
         if start_stage == idx+1:
+            print('Begin Training ' + str(idx + 1) + ' layer :...')
             classifiers, banned_index = ab.learn(faces_ii_data, non_faces_ii_data, features, classifier, votes, banned_index)
         else:
             classifiers = ul.load_features(features_stg,classifier,idx+1)

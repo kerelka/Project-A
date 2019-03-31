@@ -6,12 +6,9 @@
       <change beforePath="$PROJECT_DIR$/Cascade.py" beforeDir="false" afterPath="$PROJECT_DIR$/Cascade.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Deteksi.py" beforeDir="false" afterPath="$PROJECT_DIR$/Deteksi.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Utils.py" beforeDir="false" afterPath="$PROJECT_DIR$/Utils.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bannen_index_stage10.json" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/example.py" beforeDir="false" afterPath="$PROJECT_DIR$/example.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/gambar-multi.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/gambar.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/image_0045.jpg" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/latih.py" beforeDir="false" afterPath="$PROJECT_DIR$/latih.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/photo.jpg" beforeDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -23,7 +20,7 @@
     <session id="1375933213">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
-          <entry key="project.closed" value="20" />
+          <entry key="project.closed" value="21" />
           <entry key="project.open.time.10" value="4" />
           <entry key="project.open.time.11" value="2" />
           <entry key="project.open.time.12" value="1" />
@@ -32,7 +29,7 @@
           <entry key="project.open.time.22" value="1" />
           <entry key="project.open.time.23" value="3" />
           <entry key="project.open.time.25" value="1" />
-          <entry key="project.open.time.27" value="1" />
+          <entry key="project.open.time.27" value="2" />
           <entry key="project.open.time.29" value="1" />
           <entry key="project.open.time.3" value="1" />
           <entry key="project.open.time.31" value="1" />
@@ -42,37 +39,37 @@
           <entry key="project.open.time.39" value="1" />
           <entry key="project.open.time.59" value="1" />
           <entry key="project.open.time.9" value="1" />
-          <entry key="project.opened" value="24" />
+          <entry key="project.opened" value="25" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
         <counts>
-          <entry key="jpg" value="4" />
+          <entry key="jpg" value="5" />
           <entry key="json" value="23" />
           <entry key="pgm" value="7" />
           <entry key="png" value="96" />
-          <entry key="py" value="53" />
+          <entry key="py" value="54" />
           <entry key="txt" value="2" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
-          <entry key="Image" value="107" />
+          <entry key="Image" value="108" />
           <entry key="JSON" value="23" />
           <entry key="PLAIN_TEXT" value="2" />
-          <entry key="Python" value="53" />
+          <entry key="Python" value="54" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="py" value="19536" />
+          <entry key="py" value="19704" />
           <entry key="txt" value="21" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
           <entry key="PLAIN_TEXT" value="21" />
-          <entry key="Python" value="19536" />
+          <entry key="Python" value="19704" />
         </counts>
       </usages-collector>
     </session>
@@ -82,8 +79,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/latih.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="340">
-              <caret line="29" column="54" selection-start-line="29" selection-start-column="54" selection-end-line="29" selection-end-column="54" />
+            <state relative-caret-position="221">
+              <caret line="22" column="51" selection-start-line="22" selection-start-column="51" selection-end-line="22" selection-end-column="51" />
               <folding>
                 <element signature="e#0#21#0" expanded="true" />
               </folding>
@@ -94,8 +91,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/example.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-78">
-              <caret line="10" column="32" selection-start-line="10" selection-start-column="32" selection-end-line="10" selection-end-column="32" />
+            <state relative-caret-position="153">
+              <caret line="30" column="24" selection-start-line="30" selection-start-column="24" selection-end-line="30" selection-end-column="24" />
               <folding>
                 <element signature="e#0#16#0" expanded="true" />
               </folding>
@@ -103,11 +100,11 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/Cascade.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="621">
-              <caret line="51" column="18" lean-forward="true" selection-start-line="51" selection-start-column="18" selection-end-line="59" selection-end-column="22" />
+            <state relative-caret-position="663">
+              <caret line="51" column="27" lean-forward="true" selection-start-line="51" selection-start-column="27" selection-end-line="60" />
               <folding>
                 <element signature="e#0#18#0" expanded="true" />
               </folding>
@@ -115,14 +112,23 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/HaarLikeFeature.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="17">
+              <caret line="23" column="34" selection-start-line="23" selection-start-column="34" selection-end-line="23" selection-end-column="34" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Utils.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-605">
-              <caret line="20" lean-forward="true" selection-start-line="20" selection-end-line="20" />
+            <state relative-caret-position="449">
+              <caret line="86" column="13" selection-start-line="86" selection-start-column="13" selection-end-line="86" selection-end-column="13" />
               <folding>
                 <element signature="e#0#9#0" expanded="true" />
-                <marker date="1553940376596" expanded="true" signature="982:1150" ph="..." />
+                <marker date="1554007374886" expanded="true" signature="982:1150" ph="..." />
               </folding>
             </state>
           </provider>
@@ -131,7 +137,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/exampleLive.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="109">
+            <state relative-caret-position="160">
               <caret line="14" column="49" selection-start-line="14" selection-start-column="49" selection-end-line="14" selection-end-column="49" />
               <folding>
                 <element signature="e#0#16#0" expanded="true" />
@@ -143,12 +149,12 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Deteksi.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="153">
-              <caret line="9" column="14" selection-start-line="9" selection-start-column="14" selection-end-line="9" selection-end-column="14" />
+            <state relative-caret-position="51">
+              <caret line="9" column="12" selection-start-line="9" selection-start-column="12" selection-end-line="9" selection-end-column="12" />
               <folding>
                 <element signature="e#0#26#0" expanded="true" />
-                <marker date="1553941078627" expanded="true" signature="95:96" ph="..." />
-                <marker date="1553941078627" expanded="true" signature="95:141" ph="..." />
+                <marker date="1554008520054" expanded="true" signature="95:96" ph="..." />
+                <marker date="1554008520054" expanded="true" signature="95:141" ph="..." />
               </folding>
             </state>
           </provider>
@@ -194,7 +200,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -202,10 +207,16 @@
               <item name="Master" type="b2602c69:ProjectViewProjectNode" />
               <item name="Master" type="462c0819:PsiDirectoryNode" />
             </path>
+            <path>
+              <item name="Master" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Master" type="462c0819:PsiDirectoryNode" />
+              <item name="test_image_random" type="462c0819:PsiDirectoryNode" />
+            </path>
           </expand>
           <select />
         </subPane>
       </pane>
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -377,7 +388,7 @@
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.3276923" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.80153847" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.32153845" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -444,7 +455,6 @@
     <option name="LAST_COMMIT_MESSAGE" value="&quot;add library anaconda&quot;" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/png/trainset/faces_short/face00004.png" />
     <entry file="file://$PROJECT_DIR$/png/trainset/faces_short/face00019.png" />
     <entry file="file://$PROJECT_DIR$/png/trainset/faces_short/face00023.png" />
     <entry file="file://$PROJECT_DIR$/png/trainset/faces_short/face00035.png" />
@@ -452,9 +462,7 @@
     <entry file="file://$PROJECT_DIR$/png/trainset/faces_short/face00056.png" />
     <entry file="file://$PROJECT_DIR$/png/trainset/faces_short/face00068.png" />
     <entry file="file://$PROJECT_DIR$/png/trainset/faces_short/face00080.png" />
-    <entry file="file://$PROJECT_DIR$/gambar-multi.jpg">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
+    <entry file="file://$PROJECT_DIR$/gambar-multi.jpg" />
     <entry file="file://$PROJECT_DIR$/png/testset/faces/cmu_0003.png" />
     <entry file="file://$PROJECT_DIR$/png/testset/faces/cmu_0006.png" />
     <entry file="file://$PROJECT_DIR$/png/testset/faces/cmu_0011.png" />
@@ -501,9 +509,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/bannen_index_stage1.json" />
     <entry file="file://$PROJECT_DIR$/bannen_index_stage2.json" />
-    <entry file="file://$PROJECT_DIR$/gambar.jpg">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
+    <entry file="file://$PROJECT_DIR$/gambar.jpg" />
     <entry file="file://$PROJECT_DIR$/train/faces/faces3.png">
       <provider selected="true" editor-type-id="images" />
     </entry>
@@ -527,11 +533,6 @@
         <state relative-caret-position="245">
           <caret line="110" column="43" lean-forward="true" selection-start-line="110" selection-start-column="43" selection-end-line="110" selection-end-column="43" />
         </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/HaarLikeFeature.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1020" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/bannen_index_stage5.json" />
@@ -563,9 +564,20 @@
     <entry file="file://$PROJECT_DIR$/database.json">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
+    <entry file="file://$PROJECT_DIR$/Utils.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="449">
+          <caret line="86" column="13" selection-start-line="86" selection-start-column="13" selection-end-line="86" selection-end-column="13" />
+          <folding>
+            <element signature="e#0#9#0" expanded="true" />
+            <marker date="1554007374886" expanded="true" signature="982:1150" ph="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/exampleLive.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="109">
+        <state relative-caret-position="160">
           <caret line="14" column="49" selection-start-line="14" selection-start-column="49" selection-end-line="14" selection-end-column="49" />
           <folding>
             <element signature="e#0#16#0" expanded="true" />
@@ -573,22 +585,32 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/HaarLikeFeature.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="17">
+          <caret line="23" column="34" selection-start-line="23" selection-start-column="34" selection-end-line="23" selection-end-column="34" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/test_image_random/image_0045.jpg">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
     <entry file="file://$PROJECT_DIR$/Deteksi.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="153">
-          <caret line="9" column="14" selection-start-line="9" selection-start-column="14" selection-end-line="9" selection-end-column="14" />
+        <state relative-caret-position="51">
+          <caret line="9" column="12" selection-start-line="9" selection-start-column="12" selection-end-line="9" selection-end-column="12" />
           <folding>
             <element signature="e#0#26#0" expanded="true" />
-            <marker date="1553941078627" expanded="true" signature="95:96" ph="..." />
-            <marker date="1553941078627" expanded="true" signature="95:141" ph="..." />
+            <marker date="1554008520054" expanded="true" signature="95:96" ph="..." />
+            <marker date="1554008520054" expanded="true" signature="95:141" ph="..." />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/latih.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="340">
-          <caret line="29" column="54" selection-start-line="29" selection-start-column="54" selection-end-line="29" selection-end-column="54" />
+        <state relative-caret-position="221">
+          <caret line="22" column="51" selection-start-line="22" selection-start-column="51" selection-end-line="22" selection-end-column="51" />
           <folding>
             <element signature="e#0#21#0" expanded="true" />
           </folding>
@@ -597,8 +619,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/example.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-78">
-          <caret line="10" column="32" selection-start-line="10" selection-start-column="32" selection-end-line="10" selection-end-column="32" />
+        <state relative-caret-position="153">
+          <caret line="30" column="24" selection-start-line="30" selection-start-column="24" selection-end-line="30" selection-end-column="24" />
           <folding>
             <element signature="e#0#16#0" expanded="true" />
           </folding>
@@ -607,21 +629,10 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/Cascade.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="621">
-          <caret line="51" column="18" lean-forward="true" selection-start-line="51" selection-start-column="18" selection-end-line="59" selection-end-column="22" />
+        <state relative-caret-position="663">
+          <caret line="51" column="27" lean-forward="true" selection-start-line="51" selection-start-column="27" selection-end-line="60" />
           <folding>
             <element signature="e#0#18#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Utils.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-605">
-          <caret line="20" lean-forward="true" selection-start-line="20" selection-end-line="20" />
-          <folding>
-            <element signature="e#0#9#0" expanded="true" />
-            <marker date="1553940376596" expanded="true" signature="982:1150" ph="..." />
           </folding>
         </state>
       </provider>
