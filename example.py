@@ -35,9 +35,9 @@ faces = dt.detect(gray,cascade)
 # faces = mergeRects(faces,min_overlap_cnt=4,overlap_rate=0.3)
 # faces = mergeRects(faces)
 for x,y,w,h in faces:
-    cv.rectangle(gray,(x,y),(x+w,y+h),(255,255,0),2)
+    cv.rectangle(image,(x,y),(x+w,y+h),(255,255,0),2)
 
-cv.imshow('gambar',gray)
+cv.imshow('gambar',image)
 cv.waitKey(0)
 
 
