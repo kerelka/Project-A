@@ -8,7 +8,7 @@ from Segmentasi import Segmentasi
 from mergerect import mergeRects
 
 #pathGambar
-path = 'test_image_random/image_0045.jpg'
+path = 'test_image_random/photo.jpg'
 
 #load feature and create cascade stage
 features = ul.load_database('database.json')
@@ -32,7 +32,7 @@ gray = cv.cvtColor(image, cv.COLOR_BGR2GRAY)
 
 faces = dt.detect(gray,cascade)
 
-# faces = mergeRects(faces,min_overlap_cnt=4,overlap_rate=0.3)
+faces = mergeRects(faces,min_overlap_cnt=2,overlap_rate=0.3)
 # faces = mergeRects(faces)
 for x,y,w,h in faces:
     cv.rectangle(image,(x,y),(x+w,y+h),(255,255,0),2)
