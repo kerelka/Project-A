@@ -14,9 +14,9 @@ def dumper(obj):
 
 def cascade_latih(faces_ii_data,non_faces_ii_data,features,level_cascade):
     cascade = []
-    start_stage = 16
+    start_stage = 17
     banned = True
-    path_banned = 'bannen_index_stage15.json'
+    path_banned = 'bannen_index_stage16.json'
     if banned:
         features_stg = []
         banned_index = ul.load_banned_index(path_banned)
@@ -49,15 +49,15 @@ def cascade_latih(faces_ii_data,non_faces_ii_data,features,level_cascade):
         #       + str(correct_non_faces) + '/' + str(len(non_faces_ii_data)) + '  ('
         #       + str((float(correct_non_faces) / len(non_faces_ii_data)) * 100) + '%)')
 
-        database_stage = []
-        for clas in classifiers:
-            database_stage.append(clas)
-
-        with open('database_stage'+str(idx+1)+'.json', 'w') as f:
-            json.dump(database_stage, f, default=dumper, indent=4)
-
-        with open('bannen_index_stage'+str(idx+1)+'.json','w') as b:
-            json.dump(banned_index, b,default=dumper, indent=4)
+        # database_stage = []
+        # for clas in classifiers:
+        #     database_stage.append(clas)
+        #
+        # with open('database_stage'+str(idx+1)+'.json', 'w') as f:
+        #     json.dump(database_stage, f, default=dumper, indent=4)
+        #
+        # with open('bannen_index_stage'+str(idx+1)+'.json','w') as b:
+        #     json.dump(banned_index, b,default=dumper, indent=4)
 
     return cascade
 
